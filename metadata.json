@@ -1,0 +1,8 @@
+{
+  "name": "Elite Consulting Portfolio",
+  "description": "A high-end, luxury personal branding application for elite consultants, featuring sophisticated design, property collections, and an AI-powered private assistant.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

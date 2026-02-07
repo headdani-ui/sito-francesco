@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elite Consulting - Personal Branding</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Sans:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Mrs+Saint+Delafield&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#f2a60d",
+            "background-light": "#f8f7f5",
+            "background-dark": "#1a1a1a",
+            "background-black": "#0d0d0d",
+            "accent-gold": "#d4af37",
+            "cream": "#f3f0eb",
+            "ink": "#111111",
+            "charcoal": "#2c2c2c",
+          },
+          fontFamily: {
+            "display": ["Newsreader", "serif"],
+            "body": ["Noto Sans", "sans-serif"],
+            "serif": ["Cormorant Garamond", "serif"],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .text-gradient-gold {
+      background: linear-gradient(to right, #f2a60d, #ffeeb0, #f2a60d);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .bg-grain {
+      background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuAtgULWoN829nHJISnGehCc0p2sjGX8MJVyoTEypw_IEQoInnOG11wy5wisGIaRjgLLa3uVAhNu8iGFavNGC92XxsUwulKbsA0-mP8Lz8BRvaSGAWTw_Jyf1_VW8elYx1dlctAkEFWnXnpN1XAxkIvQ4TrBIbm3Koap6yoLv26e5DWhFsQf3_7mYY6ZQQuNAFjkekMSnqT0hRKKAkJ-tO32HtIJGuHyW9OKraVdFsIRAEkzFmFTsHst4nl2CnFXj5XTphBssFsEhfNc);
+      opacity: 0.15;
+      mix-blend-mode: overlay;
+      pointer-events: none;
+    }
+
+    @keyframes draw {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    .animate-draw {
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: draw 3s ease-out forwards;
+    }
+
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #1a1a1a;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #f2a60d;
+      border-radius: 10px;
+    }
+
+    .font-signature {
+      font-family: 'Mrs Saint Delafield', cursive;
+    }
+
+    @keyframes signature-reveal {
+      from {
+        clip-path: inset(-20% 100% -20% 0);
+      }
+
+      to {
+        clip-path: inset(-20% 0 -20% 0);
+      }
+    }
+
+    .animate-signature {
+      animation: signature-reveal 2.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+  </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body class="bg-background-dark font-display">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
